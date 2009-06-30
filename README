@@ -1,0 +1,74 @@
+gtknetcat
+------------------------------------------
+GtkNetCat is a GUI frontend for the old UNIX command nc (netcat).
+This tool can be used to transfer files to another computer via 
+direct wired connection.
+
+Runtime requirements:
+  netcat-1.10-2
+  python-2.5.4-10
+  python-gobject2-2.16.1-10
+  python-gtk2-2.14.1-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-20080624-2
+  cygport-0.9.7-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  make-3.81-2
+  pkg-config-0.23b-10
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.lxde.org/
+
+Canonical download:
+  http://downloads.sourceforge.net/lxde/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gtknetcat-0.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gtknetcat-0.1-X.cygport all
+
+This will create:
+  /usr/src/gtknetcat-0.1-X-src.tar.bz2
+  /usr/src/gtknetcat-0.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/gtknetcat
+  /usr/lib/python2.5/site-packages/gtknetcat/__init__.py
+  /usr/lib/python2.5/site-packages/gtknetcat/__init__.pyc
+  /usr/lib/python2.5/site-packages/gtknetcat/__init__.pyo
+  /usr/lib/python2.5/site-packages/gtknetcat/globals.py
+  /usr/lib/python2.5/site-packages/gtknetcat/globals.pyc
+  /usr/lib/python2.5/site-packages/gtknetcat/globals.pyo
+  /usr/lib/python2.5/site-packages/gtknetcat/gtknetcat.py
+  /usr/lib/python2.5/site-packages/gtknetcat/gtknetcat.pyc
+  /usr/lib/python2.5/site-packages/gtknetcat/gtknetcat.pyo
+  /usr/share/applications/gtknetcat.desktop
+  /usr/share/doc/gtknetcat/AUTHORS
+  /usr/share/doc/gtknetcat/COPYING
+  /usr/share/doc/gtknetcat/README
+  /usr/share/gtknetcat/wizard.glade
+  /usr/share/locale/zh_TW/LC_MESSAGES/gtknetcat.mo
+
+------------------
+
+Port Notes:
+
+----- version 0.1-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

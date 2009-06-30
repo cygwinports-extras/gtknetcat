@@ -1,0 +1,9 @@
+--- origsrc/gtknetcat-0.1/src/Makefile.am	2008-07-06 21:49:17.000000000 -0500
++++ src/gtknetcat-0.1/src/Makefile.am	2009-06-30 13:36:28.844661900 -0500
+@@ -1,5 +1,5 @@
+ bin_SCRIPTS = gtknetcat
+-libexec_SCRIPTS = gtknetcat.py
++#libexec_SCRIPTS = gtknetcat.py
+ 
+ gtknetcatdir = $(pythondir)/gtknetcat
+ gtknetcat_PYTHON = \
