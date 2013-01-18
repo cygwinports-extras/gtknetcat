@@ -1,0 +1,17 @@
+inherit gnome2
+
+NAME="gtknetcat"
+VERSION=0.1
+RELEASE=3
+CATEGORY="Net"
+SUMMARY="GTK+ netcat file transfer GUI"
+DESCRIPTION="GtkNetCat is a GUI frontend for the old UNIX command nc (netcat).
+This tool can be used to transfer files to another computer via
+direct wired connection."
+HOMEPAGE="http://lxde.org/"
+SRC_URI="mirror://sourceforge/lxde/${P}.tar.gz"
+PATCH_URI="0.1-install.patch"
+
+DISTCLEANFILES="gtknetcat.desktop src/globals.py"
+
+REQUIRES="netcat"
